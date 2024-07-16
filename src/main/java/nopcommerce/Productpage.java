@@ -1,6 +1,7 @@
 package nopcommerce;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import org.apache.commons.math3.stat.descriptive.summary.Product;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +9,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import dev.failsafe.internal.util.Assert;
+
 public class Productpage {
+	
 	public Productpage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -63,8 +67,10 @@ public class Productpage {
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissable']")
 	WebElement text;
 	public boolean popUp(){
-//		String str = text.getText();
-//		System.out.println("str is:"+str);
+	String actualtext = text.getText();
+		System.out.println(actualtext);
+		assertTrue(actualtext.contains("product has been added successfully"));
+		
 ////		if(str.contains("product has been added successfully")) {
 ////			System.out.println("Successfully created");
 ////		}

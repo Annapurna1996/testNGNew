@@ -90,11 +90,14 @@ public class ProductTest {
 	@Test(priority=9)
 	public void GetText() {
 		   pp = new Productpage(driver);
-//		     pp.getText();
-//		  assertEquals(true,pp.popUp().contains("product has been added successfully"), "Failed to contain text........");
+		   pp.popUp();
+		  // String actualtext;
+			//String excepted = "The new product has been added successfully";
+		// Assert.assertEquals(true,pp.popUp(), "Failed to contain text........");
 //			//System.out.println("Sucessfully verified");
-		   
-		  Assert.assertTrue(pp.popUp());
+			
+		   System.out.println();
+		  assertTrue(pp.popUp(),"Failed to display popup");
 		  System.out.println("pop up displayed");
 	}
 	@AfterTest
