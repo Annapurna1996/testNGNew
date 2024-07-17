@@ -97,8 +97,9 @@ public class ProductTest {
 //			//System.out.println("Sucessfully verified");
 			
 		   System.out.println();
-		  assertTrue(pp.popUp(),"Failed to display popup");
-		  System.out.println("pop up displayed");
+		   boolean b=pp.popUp();;
+		   Assert.assertTrue(b);
+		   System.out.println("pop up displayed");
 	}
 	@AfterTest
 	public void close() {

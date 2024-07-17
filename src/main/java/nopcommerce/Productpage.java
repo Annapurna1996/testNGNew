@@ -1,7 +1,6 @@
 package nopcommerce;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
+
 
 import org.apache.commons.math3.stat.descriptive.summary.Product;
 import org.openqa.selenium.WebDriver;
@@ -69,7 +68,7 @@ public class Productpage {
 	public boolean popUp(){
 	String actualtext = text.getText();
 		System.out.println(actualtext);
-		assertTrue(actualtext.contains("product has been added successfully"));
+	  boolean b=	actualtext.contains("product has been added successfully");
 		
 ////		if(str.contains("product has been added successfully")) {
 ////			System.out.println("Successfully created");
