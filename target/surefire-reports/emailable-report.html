@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">43,262</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">nopcommerce.ProductTest</td><td><a href="#m0">EnterName</a></td><td rowspan="1">1721625490177</td><td rowspan="1">32070</td></tr><tr class="failedodd"><td rowspan="1">nopcommerce.Test1</td><td><a href="#m1">testcase2</a></td><td rowspan="1">1721625526314</td><td rowspan="1">5</td></tr><tr class="failedeven"><td rowspan="1">nopcommerce.Test2</td><td><a href="#m2">testcase4</a></td><td rowspan="1">1721625526321</td><td rowspan="1">1</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">nopcommerce.ProductTest</td><td><a href="#m3">AddNewProduct</a></td><td rowspan="1">1721625523101</td><td rowspan="1">1115</td></tr><tr class="passedeven"><td><a href="#m4">AddPRoduct</a></td><td rowspan="1">1721625522252</td><td rowspan="1">849</td></tr><tr class="passedeven"><td><a href="#m5">GetText</a></td><td rowspan="1">1721625525415</td><td rowspan="1">897</td></tr><tr class="passedeven"><td><a href="#m6">Save</a></td><td rowspan="1">1721625524217</td><td rowspan="1">1198</td></tr><tr class="passedeven"><td><a href="#m7">clickCatalog</a></td><td rowspan="1">1721625488191</td><td rowspan="1">795</td></tr><tr class="passedeven"><td><a href="#m8">clickProArrow</a></td><td rowspan="1">1721625489638</td><td rowspan="1">539</td></tr><tr class="passedeven"><td><a href="#m9">clicklogin</a></td><td rowspan="1">1721625486978</td><td rowspan="1">1195</td></tr><tr class="passedeven"><td><a href="#m10">product</a></td><td rowspan="1">1721625488988</td><td rowspan="1">650</td></tr><tr class="passedodd"><td rowspan="1">nopcommerce.Test1</td><td><a href="#m11">testcase1</a></td><td rowspan="1">1721625526313</td><td rowspan="1">0</td></tr><tr class="passedeven"><td rowspan="1">nopcommerce.Test2</td><td><a href="#m12">testcase3</a></td><td rowspan="1">1721625526320</td><td rowspan="1">1</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">nopcommerce.ProductTest#EnterName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=126.0.6478.182)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0ca3d89dd71d3c38dce7c0ede1cbf223, sendKeysToElement {id=f.45338432087DD25611F91CFFA2527625.d.15B4D8DA09B59D54612365B725073D41.e.53, value=[Ljava.lang.CharSequence;@47605f2f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.182, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65188/devtoo..., se:cdpVersion: 126.0.6478.182, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0ca3d89dd71d3c38dce7c0ede1cbf223)] -&gt; xpath: //input[@id=&apos;SearchProductName&apos;]]
+Session ID: 0ca3d89dd71d3c38dce7c0ede1cbf223
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy9.sendKeys(Unknown Source)
+	at nopcommerce.Productpage.EnterName(Productpage.java:47)
+	at nopcommerce.ProductTest.EnterName(ProductTest.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 41 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">nopcommerce.Test1#testcase2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at nopcommerce.Test1.testcase2(Test1.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">nopcommerce.Test2#testcase4</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at nopcommerce.Test2.testcase4(Test2.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">nopcommerce.ProductTest#AddNewProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">nopcommerce.ProductTest#AddPRoduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">nopcommerce.ProductTest#GetText</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">nopcommerce.ProductTest#Save</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">nopcommerce.ProductTest#clickCatalog</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">nopcommerce.ProductTest#clickProArrow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">nopcommerce.ProductTest#clicklogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">nopcommerce.ProductTest#product</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">nopcommerce.Test1#testcase1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">nopcommerce.Test2#testcase3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
